@@ -19,7 +19,7 @@ for m in st.session_state.chat:
     st.chat_message(m["role"]).write(m["content"])
 
 
-prompt = st.chat_input("Ask something")
+prompt = st.chat_input("Ask something", key="user_prompt")
 
 
 if prompt:
